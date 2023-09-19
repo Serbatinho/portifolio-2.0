@@ -1,0 +1,18 @@
+
+
+$std-radius: 4px;
+
+$main-theme-color:#de4d3a;
+$text-color-secondary: #a4a4a9;
+$background-color: #1c172b;
+$background-color-secondary: #3c374d;
+
+$margin-full-container-mobile: clamp(6.25px, 4%, 25px) clamp(5px, 3%, 20px);
+$margin-mid-container-mobile: clamp(5px, 4%, 20px) clamp(4px, 2.4%, 16px);
+$margin-content-mobile: clamp(8px, 4%, 33px) clamp(15px, 20.4%, 3vw);
+
+$margin-full-container: clamp(6.25px, 4%, 25px) clamp(5px, 3%, 20px);
+$margin-mid-container: clamp(5px, 4%, 20px) clamp(4px, 2.4%, 16px);
+$margin-content: clamp(8px, 4%, 33px) clamp(15px, 20.4%, 3vw);
+
+$padding-content-container: clamp(30px, 5vh, 100px) clamp(4px, 5vw, 80px);
