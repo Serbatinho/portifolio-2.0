@@ -1,0 +1,11 @@
+@import "../../layout/header.module.scss";
+@import "../../common";
+@import "../../components";
+
+.teste{
+    @include std-button;
+}
+
+.full-content-container {
+    @include oneview-container;
+}

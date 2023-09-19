@@ -1,10 +1,19 @@
-import { Outlet } from "react-router-dom";
+import AboutSection from "../../components/Home/AboutSection";
+
+import styles from "../../styles/pages/Home/Home.module.scss";
 
 export default function Home() {
     return (
         <>
-            <h1>Home</h1>
-            <Outlet />
+            <header className={`${styles['full-content-container']}`}>
+                <div className={`${styles['mid-content-container']}`}>
+                    <div className={`${styles['content-container']}`}>
+                        <h1>Home</h1>
+                        <AboutSection />
+                        <button className={styles.teste}>Button</button>
+                    </div>
+                </div>
+            </header>
         </>
     )
 }
