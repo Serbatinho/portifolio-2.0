@@ -17,8 +17,8 @@ $margin-content: clamp(8px, 4%, 33px) clamp(15px, 20.4%, 3vw);
 $padding-content-container: clamp(30px, 5vh, 100px) clamp(4px, 5vw, 80px);
 
 
-$shadow-focus: 0 2px 5px 2px $main-theme-color;
-$shadow-highlight: box-shadow 0 3px 10px 8px $main-theme-color;
-$shadow-main-container: box-shadow 0 4px 15px 12px rgba(0, 0, 0, 0.3);
-$shadow-mid-container: box-shadow 0 1px 8px 5px $text-color-secondary;
-$shadow-press: box-shadow 0 2px 3px 2px $background-color-secondary;
+$shadow-focus: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+$shadow-highlight: 0 2px 5px 4px  $main-theme-color;
+$shadow-main-container: 0 4px 15px 12px rgba(0, 0, 0, 0.3);
+$shadow-mid-container: 0 1px 8px 5px $text-color-secondary;
+$shadow-press: 0 2px 3px 2px $background-color-secondary;
