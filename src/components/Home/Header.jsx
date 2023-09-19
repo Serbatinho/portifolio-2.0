@@ -1,7 +1,7 @@
 import Logo from "../../common/Logo/Logo";
 import TextSwitcher from "../../components/Home/TextSwitcher"
 
-import styles from "../../styles/pages/Home/home.module.scss";
+import styles from "../../styles/layout/Home/header.module.scss";
 
 export default function Home() {
     return (
