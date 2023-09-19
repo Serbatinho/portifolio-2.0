@@ -48,6 +48,8 @@ export default function TextoAlternado() {
     }, [roll])
 
     return (
-        <h3 ref={rolltext}>{texts[roll]}</h3>
+        <>
+            <h3 ref={rolltext}>{texts[roll]}</h3>
+        </>
     )
 }
