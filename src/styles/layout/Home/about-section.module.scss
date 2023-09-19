@@ -1,0 +1,57 @@
+@import '../../components/containers/ilimitedview-container';
+@import '../../components/buttons/std-button';
+@import '../../components/effects/std-icon';
+
+
+
+.full-content-container {
+    @include ilimitedview-container;
+    background-color: $background-color;
+
+    .mid-content-container {
+        .content-container{
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+    }
+}
+
+.about-item {
+    background-color: $background-color-secondary;
+    width: auto;
+    border-radius: $std-radius;
+    padding: $padding-content-container;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .about-item-title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $main-theme-color;
+        padding-bottom: 2%;
+        margin-bottom: 5%;
+
+        &>*{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    button {
+        margin-top: clamp(20px, 5vh, 50px);
+        align-self: flex-start;
+        @include std-button
+    }
+
+    a{
+        *{
+            @include std-icon
+        }
+    }
+}
