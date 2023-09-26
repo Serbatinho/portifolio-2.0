@@ -1,0 +1,39 @@
+@import '../../common';
+@import '../../components/responsives';
+@import '../../components/buttons/std-button';
+
+.full-content-container {
+    @include ilimitedview-container;
+    background-color: $background-color;
+
+    .mid-content-container{
+
+        .content-container{
+            // button{
+            //     @include std-button
+            // }
+            max-width: 100%;
+            // background-color: $background-color-secondary;
+        }
+    }
+}
+
+.card-full {
+    // height: 100px;
+    background-color: $background-color-secondary;
+    border-radius: $std-radius;
+    padding: $padding-content-container;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    margin-bottom:20px;
+}

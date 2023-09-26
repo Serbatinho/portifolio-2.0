@@ -1,28 +1,34 @@
-@import "../../layout/header.module.scss";
 @import "../../common";
 @import "../../components";
 
-.teste{
-    @include std-button;
-}
+$background-color-vignette: rgba($background-color-secondary, 0.5); // Define a cor com transparência
 
-.full-content-container {
-    @include oneview-container;
-}
-
-.header-full-content-container {
-    background-image: url('../../../img/backgrounddarkpc.jpg');
-    background-repeat: no-repeat;
+.full-content-container-home {
+  /* Estilos para a imagem de fundo com efeito de vignette */
+  &::after {
+    content: "";
+    // background-image: url('../../../img/backgroundnebula.png');
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    background-position: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: hue-rotate(10deg);
+  }
 
-.header-content-container {
-    background-color: rgba($background-color-secondary, $alpha: 0.6);
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5vh;
-    max-width: 400px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 20%, $background-color-vignette 100%);
+    pointer-events: none;
+    z-index: -2;
+  }
 }

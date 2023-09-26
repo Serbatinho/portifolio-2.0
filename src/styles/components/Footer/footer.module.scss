@@ -19,11 +19,17 @@
             // grid-template-rows: auto auto auto auto;
 
             .logo{
-                font-size: 0.5rem
+                >*{
+                    font-size: 0.5rem
+                }
             }
 
             .full-form{
                 
+            }
+
+            .nocopy{
+                text-align: center;
             }
 
             nav{
@@ -36,6 +42,7 @@
                 h3 {
                     border-bottom: 1.5px solid $main-theme-color;
                     padding-bottom: 0.5rem;
+                    
                 }
             }
 
@@ -105,11 +112,13 @@
                     margin: 0px 500px;
                     margin: 0 auto; /* Isso centraliza o elemento na coluna */
                     max-width: 100%;
-                    font-size: 1.2rem;
+
+                    >*{
+                        font-size: 1.2rem;
+                    }
                 }
 
                 .nocopy{
-                    text-align: center;
                     grid-column: span 2;
                     border-bottom: rgba($main-theme-color, $alpha: 0.7) 1px solid;
                     width: clamp(410px, 70%, 600px);
