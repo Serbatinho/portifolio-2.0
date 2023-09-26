@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
+import styles from '../../styles/components/ContactForm/contact-form.module.scss';
 
-import styles from '../../styles/components/ContactForm/contact-form.module.scss'
-
-export default function ContactForm(fatherStyle) {
-
+export default function ContactForm(props) {
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
@@ -21,8 +19,8 @@ export default function ContactForm(fatherStyle) {
     };
 
     return (
-        <div className={`${styles['full-form']}`}>
-            <h2>Entre em Contato</h2>
+        <div className={`${styles['full-form']} ${props.fatherStyle}`}>
+            <h3>Entre em Contato</h3>
             <form onSubmit={handleSubmit}>
                 <div className={`${styles['input-container']}`}>
                     <label htmlFor="nome">Nome:</label>
