@@ -1,4 +1,4 @@
-@import '../../components/containers/ilimitedview-container';
+@import '../../components/responsives';
 @import '../../components/buttons/std-button';
 @import '../../components/effects/std-icon';
 
@@ -9,9 +9,10 @@
     background-color: $background-color;
 
     .mid-content-container {
-        .content-container{
+        .about-content-container{
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 80px;
         }
     }
@@ -19,7 +20,7 @@
 
 .about-item {
     background-color: $background-color-secondary;
-    width: auto;
+    width: clamp(1px, 80%, 320px);
     border-radius: $std-radius;
     padding: $padding-content-container;
 
@@ -43,15 +44,36 @@
         }
     }
 
+    .about-item-text {
+        margin-bottom: clamp(40px, 25%, 50px);
+    }
+
     button {
         margin-top: clamp(20px, 5vh, 50px);
         align-self: flex-start;
+        margin-top: auto;
         @include std-button
     }
 
     a{
         *{
             @include std-icon
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .full-content-container {
+        .mid-content-container {
+            .about-content-container{
+                flex-direction: row;
+                gap: auto;
+                .about-item{
+                    max-width: none;
+                    width: 30%;
+                    height: 320px;
+                }
+            }
         }
     }
 }
