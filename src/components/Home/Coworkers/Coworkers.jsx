@@ -1,6 +1,5 @@
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { motion } from "framer-motion"
+import { useRef, useEffect, useState } from 'react'
 
 import { coworkersData } from './data'
 
@@ -9,41 +8,6 @@ import styles from '../../../styles/layout/Home/coworkers.module.scss'
 
 export default function Coworkers() {
 
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
 
     return (
         <>
@@ -51,18 +15,32 @@ export default function Coworkers() {
                 <div className={`${styles['mid-content-container']}`}>
                     <div className={`${styles['content-container']}`}>
                         <h2>Coworkers</h2>
-                        <Slider {...settings} className={styles.coworkerCard}>
-                            {coworkersData.map((coworker) => (
-                                <div key={coworker.id} className={styles.coworkerCard}>
-                                    <img src={coworker.linkImg} alt={coworker.name} />
-                                    <h3>{coworker.name}</h3>
-                                    <p>{coworker.area}</p>
-                                    <a href={coworker.linkedin}>LinkedIn</a>
-                                    <a href={coworker.portfolio}>Portfolio</a>
-                                    <p>{coworker.description}</p>
-                                </div>
-                            ))}
-                        </Slider>
+                        <motion.section className={`${styles['full-carousel']}`}>
+                            <motion.div className={`${styles['inner-carousel']}`}>
+
+                            </motion.div>
+                        </motion.section>
+
+                        {coworkersData.map((item) => (
+                            <>
+                                <article className={`${styles['card-full']}`} >
+                                    <h3 className={`${styles['card-title']}`}>{item.name}</h3>
+                                    <figure className={`${styles['card-full-img']}`}>
+                                        <div>
+                                            <img src={item.image} alt={item.name} />
+                                        </div>
+                                        <figcaption>{item.area}</figcaption>
+                                    </figure>
+                                    <nav className={`${styles['card-nav']}`}>
+                                        <a href={item.linkedin}>inkedin</a>
+                                        <a href={item.portfolio}>Portfolio</a>
+                                    </nav>
+                                    <p className={`${styles['card-desc']}`}>{item.description}</p>
+                                </article>
+                            </>
+                        )
+                        )
+                        }
                     </div>
                 </div>
             </section>
