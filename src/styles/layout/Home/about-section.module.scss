@@ -66,12 +66,14 @@
     .full-content-container {
         .mid-content-container {
             .about-content-container{
+                gap: 3%;
                 flex-direction: row;
                 gap: auto;
                 .about-item{
+                    box-sizing: border-box;
                     max-width: none;
-                    width: 30%;
-                    height: 320px;
+                    width: 32%;
+                    height: 400px;
                 }
             }
         }
