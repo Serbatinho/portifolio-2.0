@@ -1,5 +1,7 @@
 @import './base';
+@import './common';
 
 body {
     min-width: 360px;
+    background-color: $background-color;
 }

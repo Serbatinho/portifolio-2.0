@@ -11,9 +11,14 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-resize-observer": "^1.1.1",
     "react-router-dom": "^6.16.0",
+    "resize-observer": "^1.0.4",
+    "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.67.0"
   },
   "devDependencies": {
