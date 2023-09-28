@@ -88,5 +88,7 @@ export const coworkersData = [
         portfolio: 'https://www.robertseoworks.com/',
         linkImg: 'https://example.com/roberttaylor.jpg',
         description: 'Especialista em SEO (Otimização de Mecanismos de Busca) focado em melhorar a visibilidade online.',
-    }
+    },
+
+
 ];
