@@ -34,7 +34,7 @@ export default function Coworkers() {
             <section className={`${styles["full-content-container"]}`}>
                 <div className={`${styles["mid-content-container"]}`}>
                     <div className={`${styles["content-container"]}`}>
-                        <h2>Colegas</h2>
+                        <h2 className={`${styles["coworker-title"]}`}>Colegas</h2>
                         <motion.section
                             ref={carousel}
                             whileTap={{ cursor: "grabbing" }}
