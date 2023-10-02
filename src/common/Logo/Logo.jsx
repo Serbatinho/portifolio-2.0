@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import styles from "../../styles/components/Logo/logo.module.scss";
+import styles from "../../styles/layout/common/Logo/logo.module.scss";
 import { Link } from 'react-router-dom';
 
 function Logo({ fontSize, fatherStyle }) {

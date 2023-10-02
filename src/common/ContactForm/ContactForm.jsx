@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../../styles/components/ContactForm/contact-form.module.scss';
+import styles from '../../styles/layout/common/ContactForm/contact-form.module.scss';
 
 export default function ContactForm(props) {
     const [formData, setFormData] = useState({

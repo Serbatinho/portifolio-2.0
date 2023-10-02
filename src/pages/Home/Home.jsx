@@ -1,16 +1,16 @@
 import AboutSection from "../../components/Home/AboutSection";
-import Header from "../../components/Home/Header";
+import HomeHeader from "../../components/Home/HomeHeader";
 import History from "../../components/Home/History";
 import Coworkers from "../../components/Home/Coworkers/Coworkers";
 
 
-import styles from "../../styles/pages/Home/home.module.scss"
+import styles from "../../styles/layout/pages/Home/home.module.scss"
 
 export default function Home() {
     return (
         <>
             <div className={`${styles['full-content-container-home']}`}>
-                <Header />
+                <HomeHeader />
                 <AboutSection />
                 <History />
                 <Coworkers />

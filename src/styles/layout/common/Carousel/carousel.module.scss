@@ -1,0 +1,15 @@
+.inner-carousel{
+    display: flex;
+    gap: 0 3rem;
+    height: fit-content;
+    transition: none;
+}
+
+.full-carousel{
+cursor: grab;
+overflow: hidden;
+width: 100%;
+height: auto;
+
+}
+

@@ -2,7 +2,7 @@ import ContactForm from '../ContactForm/ContactForm';
 import Logo from '../Logo/Logo';
 import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
-import styles from '../../styles/components/Footer/footer.module.scss';
+import styles from '../../styles/layout/common/Footer/footer.module.scss';
 
 export default function Footer() {
     return (

@@ -1,4 +1,4 @@
-import styles from '../../styles/layout/Home/history.module.scss'
+import styles from '../../styles/layout/pages/Home/components/history.module.scss'
 
 export default function History() {
 

@@ -1,0 +1,33 @@
+@import '../../../common';
+@import '../../../base';
+
+.logo-container {
+    width: auto;
+    height: auto;
+}
+
+.logo {
+    border: 2.5px solid $main-theme-color;
+    color: $main-theme-color;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    padding: 0.5em 0.8em;
+    margin: 0;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    box-shadow: $shadow-focus;
+    font-family: $font-logo;
+
+    &:hover {
+        filter: blur(0.3px);
+        background-color: rgba($main-theme-color, 0.1);
+    }
+
+}
+
+// $shadow-focus: 0 2px 5px 2px $main-theme-color;
+// $shadow-highlight: 0 3px 10px 8px $main-theme-color;
+// $shadow-main-container: 0 4px 15px 12px rgba(0, 0, 0, 0.3);
+// $shadow-mid-container: 0 1px 8px 5px $text-color-secondary;
+// $shadow-press:

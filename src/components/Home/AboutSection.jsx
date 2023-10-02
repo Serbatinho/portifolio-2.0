@@ -1,4 +1,4 @@
-import styles from "../../styles/layout/Home/about-section.module.scss"
+import styles from "../../styles/layout/pages/Home/components/about-section.module.scss"
 
 import { RiReactjsLine } from "react-icons/ri"
 import { MdOutlineDesignServices } from "react-icons/md"

@@ -1,0 +1,19 @@
+@import '../../../../common';
+@import '../../../../base';
+@import '../../../assets';
+
+.full-content-container{
+    @include oneview-container;
+    // background-image: url('../../../img/backgrounddarkpc.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // transform: scaleX(-1);
+    
+
+    .mid-content-container{
+        // transform: scaleX(-1);
+        .content-container{
+            background-color: $background-color-secondary;
+        }
+    }
+}

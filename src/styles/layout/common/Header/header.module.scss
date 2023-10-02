@@ -1,0 +1,83 @@
+@import '../../../common/index';
+@import '../../assets';
+
+.full-header-button{
+    @include noborder-button;
+    position: fixed;
+    right: 0;
+    margin: 30px;
+    width: 1.8rem;
+    height: 1.6rem;
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(2 * $std-radius);
+
+    
+    .header-burguer{
+        width: 100%;
+
+        &::after, &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            background-color: $text-color;
+            height: 4px;
+            position: relative;
+            border-radius: $std-radius;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &::after{
+            top: -10px;
+            // left: 30%;
+        }
+
+        &::before{
+            top: 10px;
+            // height: 2px;
+            // left: 30%;
+        }
+    }
+
+}
+
+.header-burguer-active{
+    @include std-button;
+    background-color: $main-theme-color;
+    position: fixed;
+    right: 0;
+    margin: 30px;
+    width: 1.8rem;
+    height: 1.6rem;
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(2 * $std-radius);
+
+    &::after{
+        top: 1rem;
+        position: relative;
+        // left: 30%;
+    }
+
+    .header-burguer{
+
+        &::after{
+            top: -0.13rem;
+            transform: rotate(-45deg);
+            // left: 30%;
+        }
+
+        &::before{
+            top: 0.1rem;
+            transform: rotate(45deg);
+            // height: 2px;
+            // left: 30%;
+        }
+
+    }
+
+}
